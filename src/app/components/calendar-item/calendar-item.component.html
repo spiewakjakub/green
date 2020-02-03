@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-4">
+      <div class="item-date">
+        <div class="item-date-day text-center text-white">
+          {{item.date | day}}
+        </div>
+        <div class="item-date-month text-center text-white">
+          {{item.date | month}}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-8">
+      <div class="row-cols-6 text-white">
+        {{item.place}}
+      </div>
+      <div class="row-cols-6 text-white">
+        {{item.title}}
+      </div>
+    </div>
+
+  </div>
+</div>

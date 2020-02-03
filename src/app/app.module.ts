@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {SharedModule} from './shared/shared.module';
+import { HomeComponent } from './components/home/home.component';
+import { CalendarListComponent } from './components/calendar-list/calendar-list.component';
+import { CalendarItemComponent } from './components/calendar-item/calendar-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    CalendarListComponent,
+    CalendarItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

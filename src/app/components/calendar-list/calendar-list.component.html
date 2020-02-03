@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col text-center  text-white">
+      <h2>Kalendarz</h2>
+      <div class="dropdown-divider"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div *ngFor="let item of items">
+        <app-calendar-item [item]="item"></app-calendar-item>
+        <div class="dropdown-divider"></div>
+      </div>
+    </div>
+  </div>
+</div>

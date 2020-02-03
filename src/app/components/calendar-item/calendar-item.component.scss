@@ -1,0 +1,25 @@
+@import "src/styles";
+$radius: 8px;
+
+.container {
+  margin: 8px;
+  max-height: 128px;
+  width: auto;
+}
+
+.item-date {
+  background: $primary;
+  border-radius: 8px;
+}
+
+.item-date-day {
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+  background: lighten($primary, 50);
+}
+
+.item-date-month {
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+  background: $primary;
+}
